@@ -8,7 +8,13 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "vue": "^2.5.17"
+    "algoliasearch": "^3.30.0",
+    "dotenv": "^6.0.0",
+    "request": "^2.88.0",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "vue": "^2.5.17",
+    "vue-gallery": "^1.4.0",
+    "vue-instantsearch": "^1.7.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0",
@@ -34,6 +40,9 @@
     "plugins": {
       "autoprefixer": {}
     }
+  },
+  "engines": {
+    "node": "v10.8.0"
   },
   "browserslist": [
     "> 1%",

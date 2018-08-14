@@ -1,5 +1,11 @@
 # comic-reader
 
+Welcome to comic-reader! 
+
+## Motivation
+
+I was thinking of a quote from one of my favorite comics the other day, Hunter x Hunter. I dreamed of a extremely fast database one that could index thousands of comic book pages instantly and return the pages I want to see.
+
 ## Project setup
 ```
 npm install
