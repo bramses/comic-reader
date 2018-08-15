@@ -11,12 +11,12 @@
             <ais-search-box  :autofocus="true">
                 <input v-model="query" placeholder="Search for a quote, character, or emotion" class="searchbar"/>
             </ais-search-box>
-            <br />
+            <p><em>(Click on an image to open gallery mode)</em></p>
             <ais-powered-by></ais-powered-by>
             <ais-no-results></ais-no-results>
             <div class="comicbox">
                 <div v-if="query === ''" v-for="(chapter, chapterIndex) in chapters" :key="chapterIndex">
-                    <figure>
+                    <figure style="margin-right:7.5%"> 
                         <img class="image" :src="chapters[chapterIndex].images[chapter.preview]" :key="chapter.preview" @click="index = chapter.preview" >
                         <figcaption slot="footer">Chapter {{ chapter.chapter }} -- <b>{{ chapter.title }}</b> --  Pages : {{ chapters[chapterIndex].images.length }}</figcaption>
                     </figure> 
