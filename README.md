@@ -8,7 +8,7 @@ Live preview: http://comic-reader.surge.sh/
 
 I was thinking of a quote from one of my favorite comics the other day, Hunter x Hunter. I dreamed of a extremely fast database one that could index thousands of comic book pages instantly and return only the pages I want to see. 
 
-I was also interested in the other facets of the art of comics/manga, for example, emotions, scenes and the characters present in a panel. because comics are imbedded with their own artwork, a plain text search, while useful, won't allow us to truly take advantage of all the data points comics provide us. For this project, there needed to be a way to index multiple fields extremely quickly allowing users to see what pages contain their favorite characters or moments.
+I was also interested in the other facets of the art of comics/manga, for example, emotions, scenes and the characters present in a panel. Because comics are imbedded with their own artwork, a plain text search, while useful, won't allow us to truly take advantage of all the data points comics provide us. For this project, there needed to be a way to index multiple fields extremely quickly allowing users to see what pages contain their favorite characters or moments. I also wanted to focus on having an intuitive interface, one that gets out of the way of the user and allows them to get lost in their favorite stories.
 
 
 ## UI
@@ -16,6 +16,12 @@ I was also interested in the other facets of the art of comics/manga, for exampl
 Before searching for a quote, users will be greeted by the chapter cover only, as well as how many pages are in the chapter.
 
 After searching, users will be able to see panels matching their specific quote, emotion, or character!
+
+## Challenges
+
+* Pulling data from an external site was done by scraping with Selenium - see `/server/download-hxh.js` for details!
+* Vue makes rendering templates a cinch, but the tradeoff is a site that has more complexity than a basic JS solution. This was offset by using Webpack to build the project down to a minimized version!
+* The images are large so loading them in all at the same time was a challenge. To offset the TTI, the preview page of the chapter greets the user, then the rest of the images are loaded async!
 
 ## Examples
 
